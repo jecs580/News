@@ -8,7 +8,7 @@ body{
     /* Colocamos patron para nuestro background de la pagina "https://www.heropatterns.com/" */
     background-color: #070707;
     background-image: url("data:image/svg+xml,%3Csvg width='64' height='64' viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 16c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zm33.414-6l5.95-5.95L45.95.636 40 6.586 34.05.636 32.636 2.05 38.586 8l-5.95 5.95 1.414 1.414L40 9.414l5.95 5.95 1.414-1.414L41.414 8zM40 48c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zM9.414 40l5.95-5.95-1.414-1.414L8 38.586l-5.95-5.95L.636 34.05 6.586 40l-5.95 5.95 1.414 1.414L8 41.414l5.95 5.95 1.414-1.414L9.414 40z' fill='%23f2160c' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
-    
+    color: #fff;
     font-size: 16px;
     font-family: 'Oswald', sans-serif;
 }
@@ -56,4 +56,40 @@ ul{
 }
 .nav-main ul li a{
     padding: 6px;  /*Relleno interno a todos los enlaces del menu*/
+}
+
+/* ShowCase */
+hr{
+    margin: 10px 0;
+}
+.showcase{
+    width: 100%;
+    height: 550px;
+    background: url('img/showcase.jpg') no-repeat center center/cover;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;  /*Intervimos el eje principal al vertical*/
+    align-items: center;  /*Alineamiento secundario(horizontal) centrado*/
+    justify-content: flex-end; /*Alineamiento primario(vertical) al final*/
+}
+.btn{
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    font-weight: bold;
+    padding: 10px 20px;
+    background: #262626;
+    color: 15px;
+    font-size: 15px;
+    border: 1px solid #fff;
+    margin: 10px 0;
+}
+.btn:hover{
+    /* Al momento de acercarnos con el mouse le bajamos la opacidad*/
+    opacity: .7;
+}
+
+.showcase h2,
+.showcase p{
+    margin-bottom: 10px;
 }
