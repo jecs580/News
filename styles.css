@@ -7,7 +7,7 @@
 body{
     /* Colocamos patron para nuestro background de la pagina "https://www.heropatterns.com/" */
     background-color: #070707;
-    background-image: url("data:image/svg+xml,%3Csvg width='64' height='64' viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 16c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zm33.414-6l5.95-5.95L45.95.636 40 6.586 34.05.636 32.636 2.05 38.586 8l-5.95 5.95 1.414 1.414L40 9.414l5.95 5.95 1.414-1.414L41.414 8zM40 48c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zM9.414 40l5.95-5.95-1.414-1.414L8 38.586l-5.95-5.95L.636 34.05 6.586 40l-5.95 5.95 1.414 1.414L8 41.414l5.95 5.95 1.414-1.414L9.414 40z' fill='%23f2160c' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg width='64' height='64' viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 16c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zm33.414-6l5.95-5.95L45.95.636 40 6.586 34.05.636 32.636 2.05 38.586 8l-5.95 5.95 1.414 1.414L40 9.414l5.95 5.95 1.414-1.414L41.414 8zM40 48c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zM9.414 40l5.95-5.95-1.414-1.414L8 38.586l-5.95-5.95L.636 34.05 6.586 40l-5.95 5.95 1.414 1.414L8 41.414l5.95 5.95 1.414-1.414L9.414 40z' fill='%23f2160c' fill-opacity='0.15' fill-rule='evenodd'/%3E%3C/svg%3E");
     color: #fff;
     font-size: 16px;
     font-family: 'Oswald', sans-serif;
@@ -58,7 +58,7 @@ ul{
     padding: 6px;  /*Relleno interno a todos los enlaces del menu*/
 }
 
-/* ShowCase */
+/* SHOWCASE(Noticia principal) */
 hr{
     margin: 10px 0;
 }
@@ -67,6 +67,7 @@ hr{
     height: 550px;
     background: url('img/showcase.jpg') no-repeat center center/cover;
     padding-bottom: 50px;
+    margin-bottom: 20px;
     display: flex;
     flex-direction: column;  /*Intervimos el eje principal al vertical*/
     align-items: center;  /*Alineamiento secundario(horizontal) centrado*/
@@ -92,4 +93,30 @@ hr{
 .showcase h2,
 .showcase p{
     margin-bottom: 10px;
+}
+
+/* TARJETAS DE NOTICIAS */
+.news-cards{
+display: grid;  /*Establecemos una grilla*/
+grid-template-columns: 1fr 1fr 1fr 1fr; /*Division de cuantas columnas tendremos*/
+gap: 25px;  /*Espaciado entre columnas*/
+margin: 10px 0;
+}
+.news-cards img{
+    width: 100%;
+    height: 180px;
+}
+.news-cards h3{
+    font-size: 20px;
+    margin: 10px 0;
+}
+.news-cards a{
+    padding: 10px 0;
+    color: #f2f2f2;
+    text-transform: uppercase;
+    display: inline-block;
+    font-weight: bold;
+}
+.news-cards a:hover{
+    text-decoration: underline;
 }
